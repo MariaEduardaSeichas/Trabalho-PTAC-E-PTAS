@@ -8,8 +8,8 @@ app.use(express.urlencoded({extended: true}));
 app.get("/", (req, res) => res.type('html').send(html));
 
 app.get('/req', (req, res) => {
-    console.log("Just got a request!")
-    res.send('Yo!')
+    console.log("Meu Nome!")
+    res.send('Maria Eduarda!')
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
@@ -19,7 +19,7 @@ const html = `
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello from Render!</title>
+    <title>Trabalho PTAS E Dispoitivos Móveis</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script>
       setTimeout(() => {
